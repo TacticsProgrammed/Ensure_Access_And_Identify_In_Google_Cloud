@@ -22,6 +22,7 @@ Execute the following command on cloud shell to create a custom security role:
 
 nano role-definition.yaml
 
+
 title: "orca_storage_update"
 description: "Permissions"
 stage: "ALPHA"
@@ -39,7 +40,6 @@ includedPermissions:
 
 
 gcloud iam roles create orca_storage_update --project $DEVSHELL_PROJECT_ID \
-
 --file role-definition.yaml
 
 
